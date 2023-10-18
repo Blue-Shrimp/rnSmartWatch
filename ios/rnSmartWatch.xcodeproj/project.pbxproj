@@ -13,6 +13,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		62508F14B36F77AE566B6BF6 /* libPods-rnSmartWatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 187B69D3B60B19835E2E8352 /* libPods-rnSmartWatch.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C2B73E232ADE65F300E1D691 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B73E222ADE65F300E1D691 /* NotificationView.swift */; };
+		C2B73E252ADE665700E1D691 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B73E242ADE665700E1D691 /* NotificationController.swift */; };
+		C2B73E272ADE6AD100E1D691 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = C2B73E262ADE6AD100E1D691 /* PushNotificationPayload.apns */; };
 		C2F7F9A82AD510C500EB103B /* AppleWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F7F9A72AD510C500EB103B /* AppleWatchApp.swift */; };
 		C2F7F9AA2AD510C500EB103B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F7F9A92AD510C500EB103B /* ContentView.swift */; };
 		C2F7F9AC2AD510C900EB103B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F7F9AB2AD510C900EB103B /* Assets.xcassets */; };
@@ -69,6 +72,9 @@
 		5D1B08DCED5F90C1F5F881AB /* Pods-rnSmartWatch-rnSmartWatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnSmartWatch-rnSmartWatchTests.release.xcconfig"; path = "Target Support Files/Pods-rnSmartWatch-rnSmartWatchTests/Pods-rnSmartWatch-rnSmartWatchTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnSmartWatch/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD76A4E48BDE435AB2EAAEF0 /* Pods-rnSmartWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnSmartWatch.debug.xcconfig"; path = "Target Support Files/Pods-rnSmartWatch/Pods-rnSmartWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		C2B73E222ADE65F300E1D691 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C2B73E242ADE665700E1D691 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C2B73E262ADE6AD100E1D691 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		C2F7F9A52AD510C500EB103B /* AppleWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F7F9A72AD510C500EB103B /* AppleWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchApp.swift; sourceTree = "<group>"; };
 		C2F7F9A92AD510C500EB103B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -198,6 +204,9 @@
 				C2F7F9AB2AD510C900EB103B /* Assets.xcassets */,
 				C2F7F9AD2AD510C900EB103B /* Preview Content */,
 				C2F7F9B72AD5113A00EB103B /* PhoneConnector.swift */,
+				C2B73E222ADE65F300E1D691 /* NotificationView.swift */,
+				C2B73E242ADE665700E1D691 /* NotificationController.swift */,
+				C2B73E262ADE6AD100E1D691 /* PushNotificationPayload.apns */,
 			);
 			path = "AppleWatch Watch App";
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 			files = (
 				C2F7F9AF2AD510C900EB103B /* Preview Assets.xcassets in Resources */,
 				C2F7F9AC2AD510C900EB103B /* Assets.xcassets in Resources */,
+				C2B73E272ADE6AD100E1D691 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,9 +524,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B73E252ADE665700E1D691 /* NotificationController.swift in Sources */,
 				C2F7F9AA2AD510C500EB103B /* ContentView.swift in Sources */,
 				C2F7F9A82AD510C500EB103B /* AppleWatchApp.swift in Sources */,
 				C2F7F9B82AD5113A00EB103B /* PhoneConnector.swift in Sources */,
+				C2B73E232ADE65F300E1D691 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
